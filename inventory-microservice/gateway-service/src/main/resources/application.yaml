@@ -1,0 +1,39 @@
+server:
+  port: 9000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id:  get-all-items
+          uri: lb://ITEM-SERVICE
+          predicates:
+            - Path=/api/v1/items
+            - Method=GET
+        - id: get-items-by-code
+          uri: lb://ITEM-SERVICE
+          predicates:
+            - Path=/api/v1/items/{code}
+            - Method=GET
+        - id: search codes
+          uri: lb://ITEM-SERVICE
+          predicates:
+            - Path=/api/v1/items/search-codes
+            - Method=POST
+        - id: order services
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/api/v1/orders
+            - Method=POST
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: TRACE

@@ -1,0 +1,25 @@
+# Configuration file for gateway-service
+server:
+  port: 8080
+  servlet:
+    context-path: /library
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: books-service
+          uri: lb://BOOKS-SERVICE
+          predicates:
+            - Path=/books/**
+            - Method=GET,POST
+        - id: authors-service
+          uri: lb://AUTHORS-SERVICE
+          predicates:
+            - Path=/authors/**
+            - Method=GET,POST
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

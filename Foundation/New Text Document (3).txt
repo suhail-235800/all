@@ -1,0 +1,19 @@
+sonar
+
+admin
+password:Ichusuhi@2126
+qwertyui
+
+
+        <sonar.projectKey>sonar-basics</sonar.projectKey>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.login>sqp_5c33675964478596299d63d55d94638a69df1045</sonar.login>
+
+
+mysql
+
+#N,*1m4jkoii
+
+        <sonar.projectKey>todo-trial</sonar.projectKey>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.login>sqp_5480fb3a476c08dbe65f6d428a4406fc4b420080</sonar.login>

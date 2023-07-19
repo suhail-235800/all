@@ -1,0 +1,20 @@
+.homebody {
+    position: absolute;
+    width: 100vw;
+    background-color: #c1e7f8;
+    margin-bottom: 0%;
+  }
+  .btn {
+
+    min-width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(68, 77, 156);
+  }
+.Search-btn
+  {
+color:rgb(255, 255, 255);
+    background-color: rgb(68, 77, 156);
+  }
+
+  

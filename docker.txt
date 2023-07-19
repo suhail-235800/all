@@ -1,0 +1,3 @@
+springboot app-> ec2
+springboot app-> docker file -> docker build jar -> docker image into ecr -> ecr to ecs
+

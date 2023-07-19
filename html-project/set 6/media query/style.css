@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+
+h1{
+    font-weight: 500;
+}
+
+img{
+    padding-top: 10px;
+    height: 40%;
+    
+}
+
+p{
+    padding-top: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+label{
+    padding-top: 10px;
+    font-size: small;
+}
+input[type="text"]{
+    padding-top: 10px;
+    font-size: small;
+    height: 50%;
+    width: 50%;
+}
+input[type="submit"]{
+    
+    padding-top: 10px;
+    background-color: rgb(164, 253, 223);
+    color: rgb(203, 59, 59);
+ 
+}
+
+@media screen and (max-width: 449px) {
+
+    
+    body{
+        background-color: #92cb80;
+    }
+    img{
+        padding-top: 10px;
+        width: 30%;
+        
+    }
+    
+    
+}
+
+@media screen and (min-width:450px) and (max-width: 768px){
+
+    body{
+        background-color: #298e96;
+    }
+    
+    h1{
+        font-weight: 500;
+    }
+
+    img{
+        padding-top: 10px;
+        width: 40%;
+        
+    }
+
+    p{
+        padding-top: 10px;
+        font-size: medium;
+        font-weight: bold;
+    }
+    label{
+        padding-top: 10px;
+        font-size: small;
+    }
+    input[type="text"]{
+        padding-top: 10px;
+        font-size: small;
+        height: 50%;
+        width: 50%;
+    }
+    input[type="submit"]{
+        
+        padding-top: 10px;
+        background-color: aquamarine;
+        color: black;
+     
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width:990ox){
+    
+    body{
+        background-color: #ff8f8f;
+    }
+    h1{
+        font-weight: 500;
+        color:aquamarine
+    }
+
+    img{
+
+        padding-top: 10px;
+        width: 50%;
+        
+    }
+
+    p{
+        padding-top: 20px;
+        color: blue;
+    }
+    label{
+        padding-top: 20px;
+        font-size: small;
+    }
+    input[type="text"]{
+        padding-top: 20px;
+        font-size: small;
+        height: 50%;
+        width: 50%;
+    }
+    input[type="submit"]{
+        
+        padding-top: 10px;
+        background-color: rgb(17, 50, 184);
+        color: black;
+     
+    }
+
+}

@@ -1,0 +1,30 @@
+server:
+  port: 9000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: list-all-items
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path=/v1/customer/**
+            - Method=GET,POST
+
+        - id: movie-service
+          uri: http://localhost:8080
+          predicates:
+              - Path=/v1/movies/**
+              - Method=GET,POST
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: TRACE

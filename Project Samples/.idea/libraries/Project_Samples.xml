@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Project Samples">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Doctor-Appointment-Booking-System-master.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Doctor-Appointment-Booking-Application-main.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

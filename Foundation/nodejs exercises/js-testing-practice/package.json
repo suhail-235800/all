@@ -1,0 +1,19 @@
+{
+  "name": "js-testing-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test/*.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+
+  }
+}

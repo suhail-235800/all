@@ -1,0 +1,66 @@
+|-- backend/
+|   |-- src/
+|   |   |-- main/
+|   |   |   |-- java/
+|   |   |   |   |-- com.example.doctorsappointment/
+|   |   |   |   |   |-- DoctorsAppointmentApplication.java
+|   |   |   |   |   |-- controller/
+|   |   |   |   |   |   |-- AdminController.java
+|   |   |   |   |   |   |-- DoctorController.java
+|   |   |   |   |   |   |-- AppointmentController.java
+|   |   |   |   |   |   |-- UserController.java
+|   |   |   |   |   |   |-- RatingController.java
+|   |   |   |   |   |-- model/
+|   |   |   |   |   |   |-- Admin.java
+|   |   |   |   |   |   |-- Doctor.java
+|   |   |   |   |   |   |-- Appointment.java
+|   |   |   |   |   |   |-- User.java
+|   |   |   |   |   |   |-- Rating.java
+|   |   |   |   |   |-- repository/
+|   |   |   |   |   |   |-- AdminRepository.java
+|   |   |   |   |   |   |-- DoctorRepository.java
+|   |   |   |   |   |   |-- AppointmentRepository.java
+|   |   |   |   |   |   |-- UserRepository.java
+|   |   |   |   |   |   |-- RatingRepository.java
+|   |   |   |   |   |-- service/
+|   |   |   |   |   |   |-- AdminService.java
+|   |   |   |   |   |   |-- DoctorService.java
+|   |   |   |   |   |   |-- AppointmentService.java
+|   |   |   |   |   |   |-- UserService.java
+|   |   |   |   |   |   |-- RatingService.java
+|   |   |   |   |   |-- exception/
+|   |   |   |   |   |   |-- ApiException.java
+|   |   |   |   |   |   |-- ResourceNotFoundException.java
+|   |   |   |   |-- resources/
+|   |   |   |   |   |-- application.properties
+|   |   |-- pom.xml
+|-- frontend/
+|   |-- src/
+|   |   |-- app/
+|   |   |   |-- components/
+|   |   |   |   |-- DoctorListComponent/
+|   |   |   |   |   |-- doctor-list.component.html
+|   |   |   |   |   |-- doctor-list.component.css
+|   |   |   |   |   |-- doctor-list.component.ts
+|   |   |   |   |-- AppointmentListComponent/
+|   |   |   |   |   |-- appointment-list.component.html
+|   |   |   |   |   |-- appointment-list.component.css
+|   |   |   |   |   |-- appointment-list.component.ts
+|   |   |   |   |-- RatingComponent/
+|   |   |   |   |   |-- rating.component.html
+|   |   |   |   |   |-- rating.component.css
+|   |   |   |   |   |-- rating.component.ts
+|   |   |   |   |-- UserListComponent/
+|   |   |   |   |   |-- user-list.component.html
+|   |   |   |   |   |-- user-list.component.css
+|   |   |   |   |   |-- user-list.component.ts
+|   |   |   |   |-- AdminComponent/
+|   |   |   |   |   |-- admin.component.html
+|   |   |   |   |   |-- admin.component.css
+|   |   |   |   |   |-- admin.component.ts
+|   |   |   |-- services/
+|   |   |   |   |-- doctor.service.ts
+|   |   |   |   |-- appointment.service.ts
+|   |   |   |   |-- admin.service.ts
+|   |   |   |   |-- user.service.ts
+|   |   |   |   |-- rating.service.ts

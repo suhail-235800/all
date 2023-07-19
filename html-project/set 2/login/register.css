@@ -1,0 +1,50 @@
+.form {
+
+    padding-top: 100px ;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+}
+
+.form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border-bottom:solid #e85a2b;
+}
+
+.form-group button[type="submit"] {
+    text-align: center;
+    background-color: #383bda;
+    
+    padding: 15px;
+    border: none;
+   
+    cursor: pointer;
+    border-bottom:solid #e85a2b;
+
+    
+
+}
+
+.form-group button[type="submit"]:hover {
+    background-color: #65d56d;
+    border-bottom:solid #e85a2b;
+}

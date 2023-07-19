@@ -1,0 +1,88 @@
+<link href="adminbody.component.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<div class="homebody">
+    <div class="row align-items-start p-3">
+        <div class="col align-self-center">
+          <h4>List of doctors</h4>
+        </div>
+        <div class="col align-self-center">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search Doctors">
+            <button class="btn btn-primary" type="button">Search</button>
+          </div>
+        </div>
+      </div>   
+      <div class="row align-items-start add-doctor p-3">
+        <div class="col align-self-center">
+          <div class="mb-3">
+            <label class="form-label">Doctor Name</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="col align-self-center">
+          <div class="mb-3">
+            <label class="form-label">Specialization</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Location</label>
+            <input type="text" class="form-control">
+          </div>  
+        
+        </div>
+        <div class="col align-self-center">
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-success" >ADD</button>
+          </div>
+        </div>
+      </div>  
+
+      <div class="row align-items-start p-3 ed-del" *ngFor="let doctor of doctors; let i = index">
+        <div class="col align-self-center">
+          <div class="mb-3">
+            <label class="form-label">Doctor Name:</label>
+            <div *ngIf="doctor.isEditing">
+              <input type="text" class="form-control" [(ngModel)]="doctor.name" />
+            </div>
+            </div>
+            <div *ngIf="!doctor.isEditing">
+              <div>{{ doctor.name }}</div>
+            </div>
+          </div>
+          <div class="col align-self-center">
+          <div class="mb-3">
+            <label class="form-label">Specialization:</label>
+            <div *ngIf="doctor.isEditing">
+              <input type="text" class="form-control" [(ngModel)]="doctor.specialization" />
+            </div>
+            <div *ngIf="!doctor.isEditing">
+              <div>{{ doctor.specialization }}</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Location:</label>
+            <div *ngIf="doctor.isEditing">
+              <input type="text" class="form-control" [(ngModel)]="doctor.location" />
+            </div>
+            <div *ngIf="!doctor.isEditing">
+              <div>{{ doctor.location }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="col align-self-center">
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary" (click)="toggleEdit(doctor)">
+              {{ doctor.isEditing ? 'Save' : 'Edit' }}
+            </button>
+            <button type="button" class="btn btn-danger" (click)="deleteDoctor(i)">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+          </div>
+      
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+

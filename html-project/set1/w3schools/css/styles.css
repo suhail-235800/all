@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.learn-to-code{
+    background-color:rgb(25, 21, 21);
+    font-family: 'Ubuntu', sans-serif;
+    height: 80vh;
+    text-align: center;
+}
+
+.learn-to-code > h1{
+
+    padding: 5rem 0 0 0 ;  
+    color: white;
+    font-weight: 900;
+    font-size: 3.2rem;
+    
+}
+
+.learn-to-code > p{
+
+    margin-top: 35px;
+    color: lightpink;
+
+}
+
+#begin{
+
+    margin-top: 35px;
+
+}
+
+#begin >a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+
+#begin :hover{
+
+    color: forestgreen;
+    text-decoration: underline;
+
+}
+
+
+/* sections */
+
+

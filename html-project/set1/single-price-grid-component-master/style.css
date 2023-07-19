@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --cyan:hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+    
+    
+}
+
+body{
+
+    background-color:rgb(207, 207, 207);
+    
+}
+
+
+#join{
+    
+    padding-top: 25px;
+    margin-left: 25px;
+    color: var(--cyan);
+    padding-left: 25px;
+}
+
+#day{
+    
+    margin-left: 25px;
+    padding-top: 25px;
+    color: var(--BrightYellow);   
+    padding-left: 25px;
+}
+
+#gain{
+    
+    margin-left: 25px;
+    padding-top: 25px;
+    color: var(--GrayishBlue);
+    padding-left: 25px;
+    padding-bottom: 25px;
+    
+}
+
+.main{
+   
+    color: var(--LightGray);
+   
+}
+
+.left{
+
+    background-color: var(--cyan);
+    float: left;
+    width: 50%;
+    box-shadow: -8px 9px 34px -7px rgba(0,0,0,0.9);
+
+}
+
+.right{
+    background-color:hsla(179, 54%, 52%, 0.905);
+    float: right;
+    width: 50%;
+    box-shadow: 19px 16px 44px -19px rgba(0,0,0,0.9);
+ 
+  
+}
+
+#monthly{
+    padding-left: 50px;
+    padding-top: 50px;
+    
+}
+
+
+#dollar{
+
+    padding-left: 50px;
+    padding-top: 25px;
+    display: inline-block;
+    font-size: 2rem;
+    
+}
+
+#per{
+
+    padding-top: 25px;
+    display: inline-block;
+}
+
+
+#full{
+    padding-left: 50px;
+    padding-top: 25px;
+    
+}
+
+
+
+#signup{
+
+   
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    background:var(--BrightYellow);
+    text-align:center;
+    border-radius: 5px;   
+    padding: 25px;
+
+}
+
+#whyus{
+    padding-left: 25px;
+    padding-top: 50px;
+}
+
+#topics{
+    line-height: 21.3px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.whole{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+
+}
+
+.upper{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
